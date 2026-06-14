@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434615371630",
+    "project_id": "pachangasapp-f3283",
+    "storage_bucket": "pachangasapp-f3283.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434615371630:android:447676e195925b2e53a37f",
+        "android_client_info": {
+          "package_name": "com.pbs.pachangasapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqmGT-2UvotaeW4RazZUFbJRH_r2PprT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
