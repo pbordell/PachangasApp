@@ -17,6 +17,7 @@ La aplicación integra mapas para visualizar la ubicación de las canchas y los 
 - **Mapas**: [osmdroid](https://github.com/osmdroid/osmdroid)
 - **Navegación**: Componente de Navegación de Jetpack
 - **Arquitectura**: ViewBinding habilitado
+- **Base de datos**: Firebase Realtime Database
 
 ## Primeros Pasos 🚀
 
@@ -25,7 +26,20 @@ La aplicación integra mapas para visualizar la ubicación de las canchas y los 
 - Android SDK 33 (Compile SDK).
 - Versión mínima de Android: API 21 (Lollipop).
 
-### Instalación
+## Configuración de Firebase 🚀
+
+1.  Crea proyecto en Firebase y añade `google-services.json` en `/app/`.
+2.  Configura las Reglas de Indexación en Firebase:
+    ```json
+    {
+      "rules": {
+        "matches": {
+          ".indexOn": ["latitude", "longitude"]
+        }
+      }
+    }
+
+## Instalación
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu-usuario/PachangasApp.git
@@ -33,7 +47,3 @@ La aplicación integra mapas para visualizar la ubicación de las canchas y los 
 2. Abre el proyecto en **Android Studio**.
 3. Sincroniza el proyecto con los archivos de Gradle.
 4. Ejecuta la aplicación en un emulador o dispositivo físico.
-
-## Configuración ⚙️
-
-La aplicación utiliza `osmdroid`. Asegúrate de tener conexión a internet para que los mapas carguen correctamente. Dependiendo del uso, es posible que necesites configurar un "User Agent" en el `MainActivity` (actualmente utiliza la configuración por defecto).
